@@ -1,0 +1,41 @@
+<!-- 工具函数的测试-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>工具函数的使用</title>
+</head>
+
+<body>
+    <div>
+        <p>节流函数和防抖函数</p>
+        <code>
+            // 节流
+            </br>
+            var throttleFn = throttle(function () {
+            console.log('节流')
+            }, 3000)
+            </br>
+            // 防抖
+            </br>
+            var debounceFn = debounce(function () {
+            console.log('防抖函数')
+            }, 3000)
+            </br>
+            // 测试
+            </br>
+            window.onscroll = function () {
+            throttleFn();
+            debounceFn();
+            }
+        </code>
+    </div>
+    <script src="js/tools.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
